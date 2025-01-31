@@ -1,12 +1,16 @@
-/**************
- IS 448
- Brandon Le
- Deliverable 4
-**************/
-	/*Body Styling */
-body{
-	font-family:Verdana, Tahoma, sans-serif;
-	font-size: 12pt;
-	background-color: #fff0db;
-	cursor: url('../cursor/cursor.cur'), auto;
+/* Body Styling */
+body {
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 12pt;
+  background-color: #fff0db;
+  cursor: url('../cursor/cursor.cur'), auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove default margin */
+}
+
+h1, p {
+  text-align: center;
 }
