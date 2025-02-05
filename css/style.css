@@ -13,6 +13,10 @@ body {
   text-align: center; /* Center text in h1 and p */
 }
 
+a, input, button, label, textarea {
+    cursor: url('cursor/cursor.cur'), pointer; /* Adding pointer for interactivity */
+}
+
 /* Add space between elements */
 h1, p {
   margin-bottom: 20px; /* Adds space after each heading or paragraph */
