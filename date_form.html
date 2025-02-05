@@ -81,21 +81,18 @@
         padding:.7rem;
         border-radius:5px;
     }
-	.check-3 {
+	.check-3 td {
 		display: flex;
-		justify-content: space-between;
-		align-items: center;
+		align-items: center; /* Aligns the elements vertically in the middle */
 	}
 
-	.checkbox-container {
-		display: flex;
-		align-items: center;
-		gap: 10px; /* Adds space between checkbox, label, and input */
+	.check-3 td input[type="text"] {
+		margin-left: 10px; /* Adds space between the checkbox/label and the text input */
+		flex-grow: 1; /* Ensures the text input takes up the remaining space */
 	}
 
-	.checkbox-container input[type="text"] {
-		flex: 1;
-		margin-left: 10px; /* Adds space between the checkbox/label and the input */
+	.check-3 td input[type="checkbox"] {
+		margin-right: 10px; /* Adds space after the checkbox */
 	}
     </style>
 </head>
@@ -146,11 +143,9 @@
 		</tr>
 		<tr class="check-3">
 			<td>
-				<div class="checkbox-container">
-					<input type="checkbox" id="place-checkbox">
-					<label for="place-checkbox">Specific place</label>
-					<input type="text" id="specific-place-input" style="display:none;" placeholder="Enter specific place">
-				</div>
+				<input type="checkbox" id="place-checkbox">
+				<label for="place-checkbox">Specific place</label>
+				<input type="text" id="specific-place-input" style="display:none;" placeholder="Enter specific place">
 			</td>
 			<td>
 				<input type="checkbox" id="fun-checkbox">
