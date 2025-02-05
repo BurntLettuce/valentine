@@ -155,6 +155,9 @@
 	const specificPlaceCheckbox = document.getElementById('place-checkbox');
 	const specificPlaceInput = document.getElementById('specific-place-input');
 
+	// Initially hide the specific place input
+	specificPlaceInput.style.display = 'none';
+
 	specificPlaceCheckbox.addEventListener('change', function() {
 		if (specificPlaceCheckbox.checked) {
 			specificPlaceInput.style.display = 'block';
