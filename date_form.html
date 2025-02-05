@@ -81,7 +81,39 @@
         padding:.7rem;
         border-radius:5px;
     }
-    </style>
+    
+    /* New Styles for Alignment */
+    .field {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    
+    .field input {
+        width: 60%;
+    }
+
+    .field label {
+        width: 30%;
+    }
+    
+    .field input[type="text"] {
+        padding: 4px 10px;
+    }
+    .field input[type="date"] {
+        padding: 4px 10px;
+    }
+
+    .field .specific-place-input {
+        display: none;
+    }
+    
+    .field input[type="checkbox"]:checked + .specific-place-input {
+        display: inline-block;
+    }
+
+</style>
 </head>
 <body class="main-bg">
     <form  class="content">
@@ -94,51 +126,61 @@
             <legend>
                 <h2 class="title">Personal Details</h2>
             </legend>
-            <label>Name : </label>
-                <input type="text" placeholder="Enter your name here"> <br> <br>
-            <label>Email : </label>
-                <input type="text" placeholder="Enter your email here"> <br> <br>
-            <label>Address : </label>
-                <input type="text" placeholder="Enter your address here"> <br> <br>
-            <label>Phone Number : </label>
-                <input type="text" placeholder="Enter your phone number here">  <br> <br>
-            <label>Date of Date: </label>
-                <input type="date">       
+            <div class="field">
+                <label for="name">Name: </label>
+                <input type="text" id="name" placeholder="Enter your name here">
+            </div>
+            <div class="field">
+                <label for="email">Email: </label>
+                <input type="text" id="email" placeholder="Enter your email here">
+            </div>
+            <div class="field">
+                <label for="address">Address: </label>
+                <input type="text" id="address" placeholder="Enter your address here">
+            </div>
+            <div class="field">
+                <label for="phone">Phone Number: </label>
+                <input type="text" id="phone" placeholder="Enter your phone number here">
+            </div>
+            <div class="field">
+                <label for="date">Date of Date: </label>
+                <input type="date" id="date">
+            </div>
         </fieldset>
         <fieldset class="bord">
             <h2 class="title">Check all that apply</h2>
             <table class="check">
-		<tr class="check-1">
-			<td>
-				<input type="checkbox" id="tiramisu-checkbox">
-				<label for="tiramisu-checkbox">I want tiramisu</label>
-			</td>
-			<td>
-				<input type="checkbox" id="pay-checkbox">
-				<label for="pay-checkbox">I want to pay</label>
-			</td>
-		</tr>
-		<tr class="check-2">
-			<td>
-				<input type="checkbox" id="driving-checkbox">
-				<label for="driving-checkbox">Are we driving?</label>
-			</td>
-			<td>
-				<input type="checkbox" id="fancy-checkbox">
-				<label for="fancy-checkbox">Are we dressing fancy?</label>
-			</td>
-		</tr>
-		<tr class="check-3">
-			<td>
-				<input type="checkbox" id="place-checkbox">
-				<label for="place-checkbox">Specific place <input type="text" id="specific-place-input" style="display:none;" placeholder="Enter specific place"> </label>
-			</td>
-			<td>
-				<input type="checkbox" id="fun-checkbox">
-				<label for="fun-checkbox">Have fun and do whatever</label>
-			</td>
-		</tr>
-
+                <tr class="check-1">
+                    <td>
+                        <input type="checkbox" id="tiramisu-checkbox">
+                        <label for="tiramisu-checkbox">I want tiramisu</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="pay-checkbox">
+                        <label for="pay-checkbox">I want to pay</label>
+                    </td>
+                </tr>
+                <tr class="check-2">
+                    <td>
+                        <input type="checkbox" id="driving-checkbox">
+                        <label for="driving-checkbox">Are we driving?</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="fancy-checkbox">
+                        <label for="fancy-checkbox">Are we dressing fancy?</label>
+                    </td>
+                </tr>
+                <tr class="check-3">
+                    <td>
+                        <input type="checkbox" id="place-checkbox">
+                        <label for="place-checkbox">Specific place</label>
+                        <input type="text" id="specific-place-input" class="specific-place-input" placeholder="Enter specific place">
+                    </td>
+                    <td>
+                        <input type="checkbox" id="fun-checkbox">
+                        <label for="fun-checkbox">Have fun and do whatever</label>
+                    </td>
+                </tr>
             </table>
         </fieldset>
         <fieldset class="bord">
@@ -149,19 +191,19 @@
         <a href="#" class="btn">Send Your Application</a>
     </form>    
     <script>
-	const specificPlaceCheckbox = document.getElementById('place-checkbox');
-	const specificPlaceInput = document.getElementById('specific-place-input');
+        const specificPlaceCheckbox = document.getElementById('place-checkbox');
+        const specificPlaceInput = document.getElementById('specific-place-input');
 
-	// Initially hide the specific place input
-	specificPlaceInput.style.display = 'none';
+        // Initially hide the specific place input
+        specificPlaceInput.style.display = 'none';
 
-	specificPlaceCheckbox.addEventListener('change', function() {
-		if (specificPlaceCheckbox.checked) {
-			specificPlaceInput.style.display = 'block';
-		} else {
-			specificPlaceInput.style.display = 'none';
-		}
-	});
-    </script>	
+        specificPlaceCheckbox.addEventListener('change', function() {
+            if (specificPlaceCheckbox.checked) {
+                specificPlaceInput.style.display = 'inline-block';
+            } else {
+                specificPlaceInput.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>
