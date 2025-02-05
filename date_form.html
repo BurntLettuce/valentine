@@ -81,6 +81,21 @@
         padding:.7rem;
         border-radius:5px;
     }
+	.place-container {
+		display: flex;
+		align-items: center;
+	}
+
+	.place-container label {
+		margin-right: 10px; /* Add some space between label and input */
+	}
+
+	#specific-place-input {
+		display: none;
+		margin-left: 10px; /* Add space between label and input */
+		padding: 5px;
+		border-radius: 5px;
+	}
     </style>
 </head>
 <body class="main-bg">
@@ -130,9 +145,11 @@
 		</tr>
 		<tr class="check-3">
 			<td>
-				<input type="checkbox" id="place-checkbox">
-				<label for="place-checkbox">Specific place<input type="text" id="specific-place-input" style="display:none;" placeholder="Enter specific place"></label>
-				<input type="text" id="specific-place-input" style="display:none;" placeholder="Enter specific place">
+			    <div class="place-container">
+					<input type="checkbox" id="place-checkbox">
+					<label for="place-checkbox">Specific place<input type="text" id="specific-place-input" style="display:none;" placeholder="Enter specific place"></label>
+					<input type="text" id="specific-place-input" style="display:none;" placeholder="Enter specific place">
+				</div>
 			</td>
 			<td>
 				<input type="checkbox" id="fun-checkbox">
