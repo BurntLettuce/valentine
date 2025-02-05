@@ -138,6 +138,10 @@
 				<label for="fun-checkbox">Have fun and do whatever</label>
 			</td>
 		</tr>
+
+		<!-- Add the hidden input field here -->
+		<input type="text" id="specific-place-input" style="display:none;" placeholder="Enter specific place">
+
             </table>
         </fieldset>
         <fieldset class="bord">
@@ -148,18 +152,16 @@
         <a href="#" class="btn">Send Your Application</a>
     </form>    
     <script>
-        // Get the checkbox and the input field
-        const specificPlaceCheckbox = document.getElementById('specific-place-checkbox');
-        const specificPlaceInput = document.getElementById('specific-place-input');
+	const specificPlaceCheckbox = document.getElementById('place-checkbox');
+	const specificPlaceInput = document.getElementById('specific-place-input');
 
-        // Add an event listener to toggle the visibility of the input field
-        specificPlaceCheckbox.addEventListener('change', function() {
-            if (specificPlaceCheckbox.checked) {
-                specificPlaceInput.style.display = 'block';  // Show the input field
-            } else {
-                specificPlaceInput.style.display = 'none';  // Hide the input field
-            }
-        });
+	specificPlaceCheckbox.addEventListener('change', function() {
+		if (specificPlaceCheckbox.checked) {
+			specificPlaceInput.style.display = 'block';
+		} else {
+			specificPlaceInput.style.display = 'none';
+		}
+	});
     </script>	
 </body>
 </html>
