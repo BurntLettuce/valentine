@@ -81,6 +81,15 @@
         padding:.7rem;
         border-radius:5px;
     }
+	.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+	}
+	.checkbox-container input[type="text"] {
+		flex: 1;
+		margin-left: 10px; /* Space between the checkbox/label and the input */
+	}
     </style>
 </head>
 <body class="main-bg">
@@ -130,15 +139,17 @@
 		</tr>
 		<tr class="check-3">
 			<td>
-				<input type="checkbox" id="place-checkbox">
-				<label for="place-checkbox">Specific place</label>
+				<div class="checkbox-container">
+					<input type="checkbox" id="place-checkbox">
+					<label for="place-checkbox">Specific place</label>
+					<input type="text" id="specific-place-input" style="display:none;" placeholder="Enter specific place">
+				</div>
 			</td>
 			<td>
 				<input type="checkbox" id="fun-checkbox">
 				<label for="fun-checkbox">Have fun and do whatever</label>
 			</td>
 		</tr>
-
 		<!-- Add the hidden input field here -->
 		<input type="text" id="specific-place-input" style="display:none;" placeholder="Enter specific place">
 
