@@ -84,7 +84,34 @@
 	#specific-place-input {
 		width: auto;
 		display: inline-block; /* Ensures the input remains inline with the checkbox label */
-	}
+	}    
+	.label {
+        display: table-cell;
+        width: 1px;
+        white-space: nowrap;
+    }
+    .span {
+        display: table-cell;
+        padding: 0 0 0 5px;
+    }
+    #specific-place-input {
+        display: table-cell;
+        width: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        border-radius: 5px;
+        border: 1px solid #cfcfcf;
+    }
+
+    #specific-place-input:focus {
+        outline: 2px solid #98bcbe;
+    }
+
+    /* Adjust the display when the checkbox is checked */
+    #specific-place-checkbox:checked + label span + input {
+        display: table-cell;
+    }	
     </style>
 </head>
 <body class="main-bg">
@@ -135,8 +162,11 @@
 		<tr class="check-3">
 			<td>
 				<input type="checkbox" id="place-checkbox">
-				<label for="place-checkbox">Specific place <input type="text" id="specific-place-input" style="display:none;" placeholder="Enter specific place"> </label>
-			</td>
+				<label for="place-checkbox">
+					Specific place
+					<span></span>
+					<input type="text" id="specific-place-input" style="display:none;" placeholder="Enter specific place">
+				</label>
 			<td>
 				<input type="checkbox" id="fun-checkbox">
 				<label for="fun-checkbox">Have fun and do whatever</label>
