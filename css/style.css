@@ -1,47 +1,47 @@
 /* Body Styling */
 body {
-  font-family: 'Montserrat';
-  font-size: 12pt;
-  background-color: #fff0db;
-  cursor: url('../cursor/cursor.cur'), auto;
-  display: flex;
-  flex-direction: column; /* Stack items vertically */
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Full viewport height */
-  margin: 0; /* Remove default margin */
-  text-align: center; /* Center text in h1 and p */  
-  height: 100vh;
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  overflow: hidden;
-  filter: drop-shadow(0 0 10px white);
+	font-family: 'Montserrat';
+	font-size: 12pt;
+	background-color: #fff0db;
+	cursor: url('../cursor/cursor.cur'), auto;
+	display: flex;
+	flex-direction: column; /* Stack items vertically */
+	justify-content: center;
+	align-items: center;
+	height: 100vh; /* Full viewport height */
+	margin: 0; /* Remove default margin */
+	text-align: center; /* Center text in h1 and p */  
+	height: 100vh;
+	background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+	overflow: hidden;
+	filter: drop-shadow(0 0 10px white);
 /* Add space between elements */
 h1, p {
-  margin-bottom: 20px; /* Adds space after each heading or paragraph */
+	margin-bottom: 20px; /* Adds space after each heading or paragraph */
 }
 
 img {	
-  margin-bottom: 20px; /* Adds space after the GIF */
+	margin-bottom: 20px; /* Adds space after the GIF */
 }
 /* Apply custom cursor globally */
 * {
-  cursor: url('../cursor/cursor.cur'), auto;
+	cursor: url('../cursor/cursor.cur'), auto;
 }
 
 /* Apply custom cursor for the "Happy Valentines!" link */
 a {
-  cursor: url('../cursor/cursor.cur'), pointer;
+	cursor: url('../cursor/cursor.cur'), pointer;
 }
 /* Style for the clickable text */
 .pulse-text {
-  font-size: 2em;
-  font-weight: bold;
-  color: red;
-  text-align: center;
-  display: inline-block;
-  text-decoration: none; /* Remove underline */
-  animation: pulse 1.5s ease-in-out infinite, bubble 1s ease-in-out infinite;
-  transition: transform 0.2s ease-in-out, color 0.2s ease-in-out; /* Smooth hover effect */
+	font-size: 2em;
+	font-weight: bold;
+	color: #09585d;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none; /* Remove underline */
+	animation: pulse 1.5s ease-in-out infinite, bubble 1s ease-in-out infinite;
+	transition: transform 0.2s ease-in-out, color 0.2s ease-in-out; /* Smooth hover effect */
 }
 
 @function random_range($min, $max) {
