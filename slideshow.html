@@ -42,23 +42,28 @@
   </div>
 
   <script>
-    let slideIndex = 0;
+    let slideIndex = 1; // Start with the first slide
     showSlides();
 
     function showSlides() {
       let slides = document.getElementsByClassName("mySlides");
       let dots = document.getElementsByClassName("dot");
+      // Hide all slides
       for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";  
       }
-      slideIndex++;
+      // Loop back to first slide if beyond
       if (slideIndex > slides.length) {slideIndex = 1}    
+      // Show the current slide
       slides[slideIndex - 1].style.display = "block";  
+      // Reset all dots to inactive
       for (let i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
       }
+      // Set the current dot as active
       dots[slideIndex - 1].className += " active";
-      setTimeout(showSlides, 20000); 
+      // Change slide every 5 seconds (adjust time if needed)
+      setTimeout(showSlides, 5000); 
     }
 
     function plusSlides(n) {
