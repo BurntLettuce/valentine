@@ -7,6 +7,36 @@
   <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
+	<script>
+	function createSnowflakes() {
+	  const totalSnowflakes = 200; // Total number of snowflakes
+	  const body = document.body;
+
+	  for (let i = 0; i < totalSnowflakes; i++) {
+		const snowflake = document.createElement('div');
+		snowflake.classList.add('snowflake');
+		
+		// Generate random properties
+		const randomX = Math.random() * 100 + '%';  // random horizontal position
+		const randomScale = Math.random() * 0.5 + 0.5; // random scale between 0.5 and 1
+		const randomDuration = Math.random() * 20 + 10 + 's'; // random fall duration between 10s to 30s
+		const randomDelay = Math.random() * 10 + 's';  // random delay for animation
+
+		// Set custom properties for animation (using CSS variables)
+		snowflake.style.setProperty('--x', randomX);
+		snowflake.style.setProperty('--scale', randomScale);
+		snowflake.style.setProperty('--duration', randomDuration);
+		snowflake.style.setProperty('--delay', randomDelay);
+
+		// Append the snowflake to the body
+		body.appendChild(snowflake);
+	  }
+	}
+
+	// Create snowflakes when the page loads
+	window.onload = createSnowflakes;
+	</script>
+
   <h1>Welcome my JuJu!</h1> 
   <p>This page is 4 u <3.</p>
   
