@@ -1,3 +1,7 @@
+* {
+  cursor: url('../cursor/cursor.cur'), auto;
+}
+
 body {
   font-family: Verdana, Tahoma, sans-serif;
   font-size: 12pt;
@@ -19,7 +23,7 @@ body {
 
 /* Next & previous buttons */
 .prev, .next {
-  cursor: pointer;
+  cursor: url('cursor/cursor.cur'), auto;
   position: absolute;
   top: 50%; /* Align buttons vertically in the center */
   width: auto;
@@ -74,7 +78,7 @@ body {
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
+  cursor: url('../cursor/cursor.cur'), auto;
   height: 15px;
   width: 15px;
   margin: 0 2px;
