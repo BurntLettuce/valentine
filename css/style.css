@@ -21,3 +21,12 @@ h1, p {
 img {
   margin-bottom: 20px; /* Adds space after the GIF */
 }
+/* Apply custom cursor globally */
+* {
+  cursor: url('path/to/your/cursor.cur'), auto;
+}
+
+/* Apply custom cursor for the "Happy Valentines!" link */
+a {
+  cursor: url('path/to/your/cursor.cur'), pointer; /* pointer is a fallback */
+}
