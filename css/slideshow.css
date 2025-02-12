@@ -1,5 +1,29 @@
 * {box-sizing:border-box}
 
+/* Body Styling */
+body {
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 12pt;
+  background-color: #fff0db;
+  cursor: url('../cursor/cursor.cur'), auto;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove default margin */
+  text-align: center; /* Center text in h1 and p */
+}
+
+/* Add space between elements */
+h1, p {
+  margin-bottom: 20px; /* Adds space after each heading or paragraph */
+}
+
+img {
+  margin-bottom: 20px; /* Adds space after the GIF */
+}
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
