@@ -23,10 +23,10 @@ img {
 }
 /* Apply custom cursor globally */
 * {
-  cursor: url('path/to/your/cursor.cur'), auto;
+  cursor: url('../cursor/cursor.cur'), auto;
 }
 
 /* Apply custom cursor for the "Happy Valentines!" link */
 a {
-  cursor: url('path/to/your/cursor.cur'), pointer; /* pointer is a fallback */
+  cursor: url('../cursor/cursor.cur'), pointer;
 }
