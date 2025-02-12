@@ -12,7 +12,15 @@ body {
   margin: 0; /* Remove default margin */
   text-align: center; /* Center text in h1 and p */
 }
-
+/* Style for the text */
+.pulse-text {
+  font-size: 2em;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+  display: inline-block;
+  animation: pulse 1.5s ease-in-out infinite, bubble 1s ease-in-out infinite;
+}
 /* Add space between elements */
 h1, p {
   margin-bottom: 20px; /* Adds space after each heading or paragraph */
@@ -29,4 +37,27 @@ img {
 /* Apply custom cursor for the "Happy Valentines!" link */
 a {
   cursor: url('../cursor/cursor.cur'), pointer;
+}
+/* Bubbly effect - making the text look like it's bouncing */
+@keyframes bubble {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+/* Pulse effect - makes the text grow and shrink */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+/* Add a hover effect */
+.pulse-text:hover {
+  color: pink;
+  transform: scale(1.3);
 }
