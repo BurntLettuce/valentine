@@ -1,3 +1,10 @@
+body {
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 12pt;
+  background-color: #fff0db;
+  cursor: url('../cursor/cursor.cur'), auto;
+}
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
