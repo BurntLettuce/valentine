@@ -17,7 +17,7 @@ h1, p {
   margin-bottom: 20px; /* Adds space after each heading or paragraph */
 }
 
-img {
+img {	
   margin-bottom: 20px; /* Adds space after the GIF */
 }
 /* Apply custom cursor globally */
