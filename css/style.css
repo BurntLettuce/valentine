@@ -11,7 +11,7 @@ body {
 	margin: 0; /* Remove default margin */
 	text-align: center; /* Center text in h1 and p */  
 	height: 100vh;
-	background: radial-gradient(ellipse at bottom, #fff0db 0%, #f2dcde 100%);
+	background: radial-gradient(ellipse at bottom, #fff0db 0%, #AC9362 100%);
 	overflow: hidden;
 	filter: drop-shadow(0 0 10px white);
 }
