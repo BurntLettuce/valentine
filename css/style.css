@@ -12,15 +12,6 @@ body {
   margin: 0; /* Remove default margin */
   text-align: center; /* Center text in h1 and p */
 }
-/* Style for the text */
-.pulse-text {
-  font-size: 2em;
-  font-weight: bold;
-  color: red;
-  text-align: center;
-  display: inline-block;
-  animation: pulse 1.5s ease-in-out infinite, bubble 1s ease-in-out infinite;
-}
 /* Add space between elements */
 h1, p {
   margin-bottom: 20px; /* Adds space after each heading or paragraph */
@@ -38,6 +29,18 @@ img {
 a {
   cursor: url('../cursor/cursor.cur'), pointer;
 }
+/* Style for the clickable text */
+.pulse-text {
+  font-size: 2em;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none; /* Remove underline */
+  animation: pulse 1.5s ease-in-out infinite, bubble 1s ease-in-out infinite;
+  transition: transform 0.2s ease-in-out, color 0.2s ease-in-out; /* Smooth hover effect */
+}
+
 /* Bubbly effect - making the text look like it's bouncing */
 @keyframes bubble {
   0%, 100% {
@@ -47,6 +50,7 @@ a {
     transform: scale(1.1);
   }
 }
+
 /* Pulse effect - makes the text grow and shrink */
 @keyframes pulse {
   0%, 100% {
@@ -56,8 +60,9 @@ a {
     transform: scale(1.2);
   }
 }
-/* Add a hover effect */
+
+/* Add a hover effect to the text */
 .pulse-text:hover {
   color: pink;
-  transform: scale(1.3);
+  transform: scale(1.3); /* Make it bigger on hover */
 }
