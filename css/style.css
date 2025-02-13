@@ -14,16 +14,24 @@ body {
 	filter: drop-shadow(0 0 10px white);
 	
 	display: flex;
-	flex-direction: column; /* Stack content vertically */
-	text-align: center; /* Optional: This centers text within the container */
+	flex-direction: row; /* Display the content side by side */
+	text-align: left; /* Align text to the left */
+	justify-content: center; /* Center content horizontally */
 }
 
 h1, p {
 	margin-bottom: 20px; /* Adds space after each heading or paragraph */
 }
-
+div {
+	display: flex;
+	flex-direction: column; /* Stack content vertically */
+	align-items: flex-start; /* Align text to the left */
+	margin-right: 20px; /* Add spacing between text and image */
+}
 img {	
 	margin-bottom: 20px; /* Adds space after the GIF */
+	max-width: 50%; /* Limit the width of the gif */
+	height: auto;
 }
 /* Apply custom cursor globally */
 * {
