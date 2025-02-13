@@ -15,7 +15,6 @@ body {
 }
 
 h1, p {
-	display: block;
 	margin-bottom: 20px; /* Adds space after each heading or paragraph */
 }
 
@@ -45,7 +44,6 @@ img {
 } 
 /* Apply custom cursor for the "Happy Valentines!" link */
 a {
-	display: block;
 	margin-bottom: 20px; /* Adds space after each heading or paragraph */
 	cursor: url('../cursor/cursor.cur'), pointer;
 }
