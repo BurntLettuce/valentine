@@ -3,7 +3,6 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
 /* Body Styling */
 body {
-	font-family: 'Montserrat';
 	font-size: 12pt;
 	background-color: pink;
 	display: flex;
