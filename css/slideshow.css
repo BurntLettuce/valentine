@@ -79,7 +79,9 @@ body {
 	position: absolute;
 	top: 0;
 }
-
+.img {
+	height: 100vh;
+}
 /* The dots/bullets/indicators */
 .dot {
 	cursor: url('../cursor/cursor.cur'), auto;
