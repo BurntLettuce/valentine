@@ -27,7 +27,6 @@ body {
     display: flex;
     flex-direction: column;   /* Stack the text vertically */
     margin-right: 20px;       /* Add space between text and image */
-    align-items: center;      /* Align content vertically */
 }
 h1 {
     margin-bottom: 20px; /* Adds space after each heading or paragraph */
@@ -35,6 +34,8 @@ h1 {
 }
 p {
     margin-bottom: 20px; /* Adds space after each heading or paragraph */
+	text-align: center;
+	display: inline-block;
 }
 img {
     height: auto;
