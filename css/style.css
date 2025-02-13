@@ -32,17 +32,41 @@ img {
 a {
 	cursor: url('../cursor/cursor.cur'), pointer;
 }
-/* Animation */
-.typewriter-animation {
-  animation: 
-    typewriter 5s steps(50) 1s 1 normal both, 
-    blinkingCursor 500ms steps(50) infinite normal;
+/* Style for the clickable text */
+.pulse-text {
+	font-size: 2em;
+	font-weight: bold;
+	color: #09585d;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none; /* Remove underline */
+	animation: pulse 1.5s ease-in-out infinite, bubble 1s ease-in-out infinite;
+	transition: transform 0.2s ease-in-out, color 0.2s ease-in-out; /* Smooth hover effect */
 }
-@keyframes typewriter {
-  from { width: 0; }
-  to { width: 100%; }
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+		color: #09585d;
+	}
+	50% {
+		transform: scale(1.2);
+		color: #f06;
+	}
+	100% {
+		transform: scale(1);
+		color: #09585d;
+	}
 }
-@keyframes blinkingCursor{
-  from { border-right-color: rgba(255,255,255,.75); }
-  to { border-right-color: transparent; }
+
+@keyframes bubble {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(0);
+	}
 }
