@@ -26,10 +26,13 @@ body {
     flex-direction: column;   /* Stack the text vertically */
     margin-right: 20px;       /* Add space between text and image */
 }
-h1, p {
+h1 {
+    margin-bottom: 20px; /* Adds space after each heading or paragraph */
+	font-size:60px;"
+}
+p {
     margin-bottom: 20px; /* Adds space after each heading or paragraph */
 }
-
 img {
     height: auto;
 }
