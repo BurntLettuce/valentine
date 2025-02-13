@@ -43,7 +43,7 @@ img {
 	box-sizing: border-box;
 	cursor: url('../cursor/cursor.cur'), auto;
 }
-heart.style.position = "absolute"; 
+
 .heart {
 	position: fixed;
 	font-size: 1.5rem;
