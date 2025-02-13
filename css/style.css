@@ -12,6 +12,10 @@ body {
 	min-height: 100vh;
 	background: radial-gradient(ellipse at bottom, #fff0db 0%, #AC9362 100%);
 	filter: drop-shadow(0 0 10px white);
+	
+	display: flex;
+	flex-direction: column; /* Stack content vertically */
+	text-align: center; /* Optional: This centers text within the container */
 }
 
 h1, p {
