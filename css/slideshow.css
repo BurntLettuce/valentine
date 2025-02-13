@@ -6,6 +6,8 @@ body {
 	font-family: 'Montserrat';
 	font-size: 12pt;
 	background-color: #fff0db;
+    background: radial-gradient(ellipse at bottom, #fff0db 0%, #AC9362 100%);
+    filter: drop-shadow(0 0 10px white);
 	cursor: url('../cursor/cursor.cur'), auto;
 }
 
