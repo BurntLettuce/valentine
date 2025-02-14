@@ -32,6 +32,7 @@
             margin: 0 auto;
             margin-top: 2rem;
             width: 100%;
+            max-width: 1200px;  /* Max width for the form */
             border: 1px solid #cfcfcf;
             margin-bottom: 2rem;
             padding: 1rem .5rem 1rem .5rem;
@@ -43,7 +44,8 @@
             margin-top: 2rem;
             padding-top: 2rem;
             margin-bottom: 2rem;
-            width: 90%;
+            width: 100%;
+            max-width: 1200px;  /* Max width for the content */
             border: 1 solid #cfcfcf;
             background: #f2dcde;
             text-align: left;
@@ -115,11 +117,22 @@
         @media (max-width: 768px) {
             .content {
                 flex-direction: column;
-                width: 90%;
+                width: 100%;
             }
             .content .left, .content .right {
                 width: 100%;
                 margin-bottom: 1rem;
+            }
+            .bord {
+                width: 100%;
+                margin-bottom: 1rem;
+                padding: 1rem;
+            }
+            .field input {
+                width: 80%;  /* Adjust input width for small screens */
+            }
+            .field label {
+                width: 30%;
             }
         }
     </style>
