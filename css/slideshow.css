@@ -35,7 +35,7 @@ body {
 /* Next & previous buttons */
 .prev, .next {
   cursor: url('cursor/cursor.cur'), auto;
-  position: relative;
+  position: absolute;
   top: 50%;
   width: auto;
   padding: 16px;
@@ -46,7 +46,6 @@ body {
   border-radius: 0 3px 3px 0;
   user-select: none;
   background-color: rgba(0, 0, 0, 0.5); 
-  top: 50%; 
   transform: translateY(-50%);
 }
 
