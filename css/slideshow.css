@@ -24,10 +24,13 @@ body {
 }
 
 .mySlides img {
-  width: 100%; /* Ensure the image takes the full width of the container */
-  max-height: 90vh; /* Maximum height should be 90% of the viewport */
-  object-fit: contain; /* This ensures the image scales to fit without cropping */
+  width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+  object-position: center center;
+  transition: object-position 0.5s ease;
 }
+
 
 /* Next & previous buttons */
 .prev, .next {
